@@ -17,7 +17,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-WWWrite your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! My name is Gonzalo and I'm currently working on databases at [Rubrik](https://www.rubrik.com/). I'm an undergraduate student at the [Carnegie Mellon University School of Computer Science](https://www.cs.cmu.edu/), majoring in Computer Science (B.S.).
+
+My interests lie in deep learning theory, cloud computing, and distributed systems.
+
+I grew up in Madrid, Spain, and later moved to the US for college and work. In my free time, I enjoy making music, playing tennis, learning history and spending time with my family and friends.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 

@@ -23,6 +23,8 @@ My interests lie in deep learning theory, cloud computing, and distributed syste
 
 I grew up in Madrid, Spain, and later moved to the US for college and work. In my free time, I enjoy making music, playing tennis, learning history and spending time with my family and friends.
 
+Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu.
+
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.

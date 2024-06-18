@@ -64,11 +64,11 @@ If you want to create blog posts that are not ready to be published, but you wan
 
 ## Creating new projects
 
-You can create new projects by adding new Markdown files in the _projects directory. The easiest way to do this is to copy an existing project and modify it.
+You can create new projects by adding new Markdown files in the \_projects directory. The easiest way to do this is to copy an existing project and modify it.
 
 ## Adding some news
 
-You can add news in the about page by adding new Markdown files in the _news directory. There are currently two types of news: inline news and news with a link. News with a link take you to a new page while inline news are displayed directly in the about page. The easiest way to create yours is to copy an existing news and modify it.
+You can add news in the about page by adding new Markdown files in the \_news directory. There are currently two types of news: inline news and news with a link. News with a link take you to a new page while inline news are displayed directly in the about page. The easiest way to create yours is to copy an existing news and modify it.
 
 ## Adding Collections
 

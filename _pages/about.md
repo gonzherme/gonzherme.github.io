@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Software Engineer Intern at <a href='https://www.rubrik.com/'>Rubrik</a>
 

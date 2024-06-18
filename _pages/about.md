@@ -6,7 +6,7 @@ subtitle: Software Engineer Intern at <a href='https://www.rubrik.com/'>Rubrik</
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: panda.HEIC
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>5520 Forbes Avenue</p>

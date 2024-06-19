@@ -24,3 +24,5 @@ My interests lie in deep learning theory, cloud computing, and distributed syste
 I grew up in Madrid, Spain, and later moved to the US for college and work. In my free time, I enjoy making music, playing tennis, learning history and spending time with family and friends.
 
 Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
+
+### Some of my stuff

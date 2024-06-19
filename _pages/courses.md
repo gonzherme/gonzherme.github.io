@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: post
 title: Courses
 permalink: /
 ---
@@ -35,10 +35,17 @@ permalink: /
 - 76-270 Writing for the Professions
 - 79-345 Roots of Rock & Roll
 
-# Fall 2025
+# Fall 2024
 
 - 15-440 Distributed Systems
 - 10-417 Intermediate Deep Learning
 - 15-210 Parallel and Sequential Data Structures and Algorithms
 - 33-104 Experimental Physics
 - 70-340 Business Communications
+
+# Spring 2025
+
+- 15-319 Cloud Computing
+- 10-414 Deep Learning Systems: Algorithms and Implementation
+- 15-451 Algorithm Design and Analysis
+- 33-120 Science and Science Fiction

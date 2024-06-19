@@ -25,12 +25,9 @@ I grew up in Madrid, Spain, and later moved to the US for college and work. In m
 
 Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
 
-#### Some of my stuff and Favourite links
+###### My Bookmarks
 
-[Resume pdf](assets/pdf/resume.pdf)
-
-[A Philosophy of Software Design](https://milkov.tech/assets/psd.pdf)
-
-[Unit Testing by Erik Kuefler](https://abseil.io/resources/swe-book/html/ch12.html)
-
-[How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+- [My Resume (pdf)](assets/pdf/resume.pdf)
+- [A Philosophy of Software Design](https://milkov.tech/assets/psd.pdf)
+- [Unit Testing by Erik Kuefler](https://abseil.io/resources/swe-book/html/ch12.html)
+- [How to Write a Git Commit Message](https://cbea.ms/git-commit/)

@@ -2,7 +2,7 @@
 layout: page
 permalink: /Courses/
 title: Courses
-description: Courses I have taken during my undergrad at CMU
+description: Courses I have taken (or will be taking) during my undergrad at CMU
 nav: true
 nav_order: 6
 ---

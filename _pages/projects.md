@@ -2,7 +2,7 @@
 layout: page
 permalink: /Projects/
 title: Projects
-description: Some of my projects on public GitHub repositories.
+description: Explore my projects! Click on each project to see detailed descriptions and learn more about what I've worked on.
 # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
 nav: true
 nav_order: 4

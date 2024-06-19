@@ -14,6 +14,31 @@ permalink: /
 - 84-362 Diplomacy and Statecraft
 - 99-101 Computing @ CMU
 
-# Spring 2022
+# Spring 2023
 
-- 15-122 Principles of Imperative Computation
+- 15-122 Principles of Imperative Computation (Datastructures and Algorithms)
+- 15-150 Principles of Functional Programming
+- 21-266 Vector Calculus for Computer Scientists
+- 76-101 Interpretation and Argument
+
+# Fall 2023
+
+- 15-213 Introduction to Computer Systems
+- 15-281 Artificial Intelligence
+- 36-218 Probability Theory for Computer Scientists
+- 85-211 Cognitive Psychology
+
+# Spring 2024
+
+- 10-315 Introduction to Machine Learning
+- 15-251 Great Ideas in Theoretical Computer Science
+- 76-270 Writing for the Professions
+- 79-345 Roots of Rock & Roll
+
+# Fall 2025
+
+- 15-440 Distributed Systems
+- 10-417 Intermediate Deep Learning
+- 15-210 Parallel and Sequential Data Structures and Algorithms
+- 33-104 Experimental Physics
+- 70-340 Business Communications

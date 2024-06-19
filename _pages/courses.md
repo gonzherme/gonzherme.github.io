@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: none
 title: Courses
 permalink: /
 ---

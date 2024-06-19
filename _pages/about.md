@@ -17,6 +17,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+#### About me
+
 Hi! My name is Gonzalo and I'm currently working on databases at [Rubrik](https://www.rubrik.com/). I'm an undergraduate student at the [Carnegie Mellon University School of Computer Science](https://www.cs.cmu.edu/), majoring in Computer Science (B.S.).
 
 My interests lie in deep learning theory, cloud computing, and distributed systems.
@@ -31,3 +33,6 @@ Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
 - [A Philosophy of Software Design](https://milkov.tech/assets/psd.pdf)
 - [Unit Testing by Erik Kuefler](https://abseil.io/resources/swe-book/html/ch12.html)
 - [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
+- [Awesome Emacs config files](https://github.com/caisah/emacs.dz)
+- [Free Online Computer Science Courses](https://github.com/ossu/computer-science)
+- [Deep Learning Tutorials](https://github.com/ChristosChristofidis/awesome-deep-learning)

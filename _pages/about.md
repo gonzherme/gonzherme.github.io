@@ -25,7 +25,7 @@ I grew up in Madrid, Spain, and later moved to the US for college and work. In m
 
 Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
 
-###### My Bookmarks
+#### My Bookmarks
 
 - [My Resume (pdf)](assets/pdf/resume.pdf)
 - [A Philosophy of Software Design](https://milkov.tech/assets/psd.pdf)

@@ -5,7 +5,7 @@ author_profile: false
 permalink: /courses/
 ---
 
-*** Fall 2022 ***
+## Fall 2022
 
 - 07-128 First Year Immigration Course
 - 07-131 Great Practical Ideas for Computer Scientists

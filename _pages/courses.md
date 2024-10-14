@@ -2,8 +2,7 @@
 permalink: /
 title: "Courses"
 author_profile: false
-redirect_from: 
-  - /courses/
+permalink: /courses/
 ---
 
 *** Fall 2022 ***

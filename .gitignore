@@ -12,4 +12,5 @@ Gemfile.lock
 node_modules
 package-lock.json
 
+# ds store
 .DS_Store

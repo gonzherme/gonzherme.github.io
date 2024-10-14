@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Gonzalo de Hermenegildo"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Gonzalo"
 description              : &description "personal description"

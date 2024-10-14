@@ -2,6 +2,7 @@
 title: "Projects"
 author_profile: false
 permalink: /projects/
+sitemap: false
 ---
 
 ## [Sentiment Analysis Optimization](https://github.com/gonzherme/sentiment-analysis)

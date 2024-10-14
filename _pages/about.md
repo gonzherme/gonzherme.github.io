@@ -5,6 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+sitemap: false  
 ---
 
 Hi! My name is Gonzalo and I'm currently working on databases at [Rubrik](https://www.rubrik.com/). I'm an undergraduate student at the [Carnegie Mellon University School of Computer Science](https://www.cs.cmu.edu/), majoring in Computer Science (B.S.) with a double concentration in Computer Systems and Machine Learning.

@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "panda.jpg"
+  avatar           : "burning_profile.jpeg"
   name             : "Gonzalo de Hermenegildo"
   pronouns         : # example: "he/him"  
   bio              : "CS @ CMU | SWE Intern @ Rubrik"

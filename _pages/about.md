@@ -18,6 +18,7 @@ Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
 
 **My Bookmarks**
 - [A Philosophy of Software Design](https://milkov.tech/assets/psd.pdf)
+- [Designing Data Intensive Applications](https://github.com/lafengnan/ebooks-1/blob/master/Designing%20Data%20Intensive%20Applications.pdf)
 - [Unit Testing by Erik Kuefler](https://abseil.io/resources/swe-book/html/ch12.html)
 - [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
 - [Awesome Emacs config files](https://github.com/caisah/emacs.dz)

@@ -1,11 +1,10 @@
 ---
-permalink: /
 title: "Courses"
 author_profile: false
 permalink: /courses/
 ---
 
-## Fall 2022
+### Fall 2022
 
 - 07-128 First Year Immigration Course
 - 07-131 Great Practical Ideas for Computer Scientists
@@ -15,14 +14,14 @@ permalink: /courses/
 - 84-362 Diplomacy and Statecraft
 - 99-101 Computing @ CMU
 
-*** Spring 2023 ***
+#### Spring 2023
 
 - 15-122 Principles of Imperative Computation (Datastructures and Algorithms)
 - 15-150 Principles of Functional Programming
 - 21-266 Vector Calculus for Computer Scientists
 - 76-101 Interpretation and Argument
 
-*** Fall 2023 ***
+##### Fall 2023
 
 - 15-213 Introduction to Computer Systems
 - 15-281 Artificial Intelligence
@@ -42,7 +41,6 @@ permalink: /courses/
 - 10-417 Intermediate Deep Learning
 - 15-210 Parallel and Sequential Data Structures and Algorithms
 - 33-104 Experimental Physics
-- 70-340 Business Communications
 
 *** Spring 2025 ***
 

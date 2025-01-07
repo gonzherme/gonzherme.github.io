@@ -10,7 +10,7 @@ sitemap: true
 - Preprocessed data with Bag of Words (BOW) and TF-IDF, optimizing for accuracy and computational efficiency
 - Analyzed the impact of word embedding dimensionality on model performance, balancing reduced computation cost and accuracy
 
-<video width="100" height="500" controls>
+<video width="1000" height="500" controls>
   <source src="../images/sentiment-video.mov" type="video/mp4">
   Your browser does not support the video tag.
 </video>

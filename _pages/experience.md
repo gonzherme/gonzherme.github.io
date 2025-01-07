@@ -26,13 +26,12 @@ I was responsible for redesigning Rubrik’s database service architecture, whic
 
 <div style="display: flex; align-items: center;">
   <img src="../images/cmu-logo.png" alt="Rubrik Logo" style="width: 300px; height: auto; margin-right: 15px;"/>
-  <p>Worked with Professor [Roger B. Dannenberg](https://www.cs.cmu.edu/~rbd/) on the [Serpent programming language](https://www.cs.cmu.edu/~music/cmp/serpent/doc/serpent.htm), [a faster version of Python](https://www.cs.cmu.edu/~rbd/blog/fast/fast-blog10jan2024.html) (can be downloaded [here](https://sourceforge.net/projects/serpent/)). Inspired by Python, Serpent has a simple, minimal syntax, dynamic typing, and support for object-oriented programming. Serpent is designed for use in real-time systems, especially interactive multimedia systems. It 
-provides a real-time parallel mark-sweep garbage collector and multiple virtual machines (multiple independent instances of Serpent can run concurrently in one address space).
+  <p>Worked with Professor <a href="https://www.cs.cmu.edu/~rbd/" target="_blank">Roger B. Dannenberg</a> on the <a href="https://www.cs.cmu.edu/~music/cmp/serpent/doc/serpent.htm" target="_blank">Serpent programming language</a>, <a href="https://www.cs.cmu.edu/~rbd/blog/fast/fast-blog10jan2024.html" target="_blank">a faster version of Python</a> (can be downloaded <a href="https://sourceforge.net/projects/serpent/" target="_blank">here</a>). Inspired by Python, Serpent has a simple, minimal syntax, dynamic typing, and support for object-oriented programming. Serpent is designed for use in real-time systems, especially interactive multimedia systems. It provides a real-time parallel mark-sweep garbage collector and multiple virtual machines (multiple independent instances of Serpent can run concurrently in one address space).
 
-We compared all languages using standard benchmarking algorithms, such as: matrix multiplcation, binary-tree searches, n-queen solving, and sudoku. We took practical runtime measurements to evaluate the performance of simple algorithms like sorting, searching, and mathematical computations. The tests were designed to measure both execution speed and memory usage across a variety of scenarios. We also implemented each algorithm in Serpent, Python, C, and C++ to directly compare their runtime performance in similar conditions, using standard libraries and common optimizations for each language.
-.</p>
+</p>
 </div>
-
+We compared all languages using standard benchmarking algorithms, such as: matrix multiplcation, binary-tree searches, n-queen solving, and sudoku. We took practical runtime measurements to evaluate the performance of simple algorithms like sorting, searching, and mathematical computations. The tests were designed to measure both execution speed and memory usage across a variety of scenarios. We also implemented each algorithm in Serpent, Python, C, and C++ to directly compare their runtime performance in similar conditions, using standard libraries and common optimizations for each language.
+.
 
 
 [here](http://gonzherme.github.io/files/vqa-paper.pdf)

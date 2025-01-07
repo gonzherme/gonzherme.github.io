@@ -6,3 +6,5 @@ permalink: /research/
 
 
 Research test.
+
+[here](http://gonzherme.github.io/files/vqa-paper.pdf)

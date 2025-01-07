@@ -34,7 +34,6 @@ permalink: /courses/
 - 85-211 Cognitive Psychology
 
 
-
 ## Spring 2023
 
 - 15-122 Principles of Imperative Computation (Datastructures and Algorithms)

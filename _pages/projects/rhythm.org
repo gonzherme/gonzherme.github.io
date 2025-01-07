@@ -1,4 +1,11 @@
-#+title: Rhythm
+#+BEGIN_EXPORT markdown
+---
+title: "Rhythm"
+#+author_profile: true
+#+permalink: /research/
+---
+#+END_EXPORT
+
 
 ** An Application to Match Your Running Pace with Music
 

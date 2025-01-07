@@ -27,3 +27,5 @@ sitemap: true
 - Deployed [Python software tool](https://github.com/gonzoherme/Rhythm) that helps runners keep a desired pace through the music they listen to
 - Tool changes the beats per minute of songs to match the steps per minute of the runner
 - Implemented manipulation of mp3 audio files with ML beat detection libraries: pydub, scipy, and librosa
+
+[here](http://gonzherme.github.io/files/vqa-paper.pdf)

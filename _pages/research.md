@@ -5,4 +5,4 @@ permalink: /research/
 ---
 
 
-Research test
+Research test.

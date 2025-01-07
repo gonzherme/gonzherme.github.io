@@ -2,7 +2,7 @@
 ---
 title: "Rhythm"
 #+author_profile: true
-#+permalink: /research/
+#+permalink: /rhythm/
 ---
 #+END_EXPORT
 

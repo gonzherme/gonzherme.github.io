@@ -1,0 +1,10 @@
+Blogs are written in =.org= files. These can be exported to =.md= files using: =C-c C-e m=, which Jekyll is compatible with.
+
+The following header is required to automatically add this text when exporting to =.md=
+#+BEGIN_EXPORT markdown
+---
+title: ...
+#+author_profile: ...
+#+permalink: ...
+---
+#+END_EXPORT

@@ -1,0 +1,50 @@
+#+title: Sentiment Analysis
+
+Sentiment analysis is a domain in Natural Language Processing (NLP) where we attempt to classify text based on emotion. In [[https://github.com/gonzherme/sentiment-analysis][this project]], I developed two machine learning methods—Logistic Regression and k-Nearest Neighbors (k-NN)—to classify movie reviews from the [[https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews][IMDB dataset]]. The input reviews will be from 10 to 50 words in length, and will be enmbedded in a higher-dimensional space using [[https://en.wikipedia.org/wiki/Bag-of-words_model][Bag of Words (BOW)]].
+
+The goal of this project is to analyze how the size of the dimensionality of the word embeddings affect the accuracy of both sentiment analyisis models. The goal is to explore how a reduction in dimensionality, which reduces computation cost, trades off with model accuracy.
+
+
+** Dataset and Preprocessing
+The IMDB dataset contains labeled movie reviews marked as positive or negative. I randomly sampled 10,000 reviews and preprocessed the text by:
+
+    1. Removing punctuation and converting to lowercase for uniformity.
+    2. Vectorizing the text using BOW and Term Frequency-Inverse Document Frequency (TF-IDF) representations to convert the reviews into numerical formats suitable for model training.
+
+
+** Models Implemented
+
+*Logistic Regression*
+We used binary logistic regression for this binary classification task i.e. determining the probability of an embedded input text being positive (1) (or equivalently, one minus the probability of the input being negative (0)). We set the linear boundary for the probability at 0.5, where anything higher is marked as positive, and anything lower as negative.
+
+Inputs to the model are embedded using BOW. Text is represented as a vector, where each unique word in the specified vocabulary corresponds to a feature, and the value is the word's frequency (or presence) in the input text. It inherently ignores grammar, word order, and context, focusing solely on word occurrence.
+
+The model consists of a single layer linear neural network, with a sigmoid activation function to turn the real-valued linear output into a probability. We use a binary cross entropy (BCE) loss function, which measures the difference between predicted probabilities and actual labels. The weights (*w*) and bias (*b*) of the linear network are optimized to minimize this loss, using gradient descent.
+
+  
+*k-NN*
+k-Nearest Neighbors (k-NN) is a hard (does not output probabilities, instead it outputs the class directly) supervised classification algorithm that does not require a training phase. Instead, it operates by storing all "training" data points and calculating distances during prediction. For this implementation, we simply used scikit-learn's k-NN library.
+
+Given a new data point, k-NN will output as a prediction the class of the closest data point in its sample data to the input data point. Thus, this algorithm determines the sentiment of a review based on the labels of its closest neighbors, making it inherently distance-based. However, k-NN is not ideal for use with raw Bag-of-Words (BOW) representations, as BOW treats all terms equally and does not account for their relative importance or semantic similarities between texts. To address this limitation, we apply Term Frequency-Inverse Document Frequency (TF-IDF) weighting to the BOW representation. TF-IDF adjusts term weights to reflect their importance within a document while reducing the influence of commonly occurring terms across the corpus. This transformation enhances the numerical representation of text, allowing k-NN to compare vectors more effectively and make better-informed predictions.
+
+
+** Training and Evaluation
+*Logistic Regression*: trained for 30 epochs, achieving a final accuracy of 85% on the test dataset.
+
+*k-NN*: the scikit-learn implementation lagged behind at 71%, primarily due to the curse of dimensionality and its reliance on local patterns in high-dimensional spaces.
+
+
+** Experimental Insights
+To analyze how the size of the dimensionality of the word embeddings affect prediction accuracy, we trained and tested both of our models (Logistic Regression and k-NN) with varying vocabulary dimensions for the word embeddings, ranging from a dimensionality of 50 up to 40,000.
+
+[[./images/sentiment_experiment.png]]
+
+As shown in the graph, the performance of logistic regression surpasses that of k-NN. Logistic regression often outperforms k-NN in text classification tasks because it handles high-dimensional data more effectively. Text data, especially when represented using methods like Bag-of-Words (BOW) or TF-IDF, creates a large number of features. Logistic regression learns weights for each feature, allowing it to identify and prioritize the most important ones for classification. In contrast, k-NN relies on calculating distances between data points, which becomes less reliable in high-dimensional spaces due to the "curse of dimensionality." (as the number of dimensions (features) increases, the volume of the space grows exponentially, and data points become sparse, making it harder to analyze and draw conclusions.) This makes logistic regression better suited for extracting meaningful patterns from text data.
+
+With respect to the dimensionality-accuracy trade off, the graph shows expected results: increasing the dimensionality of the embedded data consistently improves the accuracy of our models. Higher-dimensional embeddings provide a richer representation of the input data, capturing more nuanced features and relationships. This enhanced representation enables the models to better distinguish between classes, leading to improved predictive performance. However, higher dimensions come at the cost of increased computational complexity and higher risk of overfitting, which usually means higher costs.
+
+The question is how can we obtain the highest possible accuracy with the least computational cost. We can see in the graph is that model accuracy tends to plateau after a certain number of features in our embedded space i.e. at some point a higher dimensionality does not further improve accuracy. The "sweet spot" is at the top left of the curve, right at the start of the plateau. There, we achieve maximum model accuracy with minimum computational cost (fewest features).
+
+
+
+

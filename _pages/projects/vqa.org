@@ -1,0 +1,3 @@
+#+title: Enhancing Visual Question Answering (VQA) with Deep Reasoning Networks (DRNs)
+
+[[~/gonz/CS/IDL/Project/reports/final/final.pdf]]

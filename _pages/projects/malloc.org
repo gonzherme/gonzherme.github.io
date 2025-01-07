@@ -1,0 +1,107 @@
+#+title: Building a Dynamic Memory Allocator
+
+* Introduction
+Dynamic memory allocation is a fundamental concept in modern programming, powering the efficient use of system resources in countless applications. However, the mechanisms behind it are often hidden within high-level abstractions. In this project, I set out to explore theese mechanisms by building a dynamic memory allocator from the ground up.
+
+This journey involved implementing core functions of the C Standard Library's general-purpose allocator—namely, =malloc=, =calloc=, and =free=. Along the way, I explored the underlying trade-offs and design decisions that govern performance and efficiency in memory management.
+
+*Project Goals*
+The primary objective of this project was to develop a dynamic memory allocator that excels in two critical performance metrics:
+
+1. *Utilization*: Minimize memory wasted due to fragmentation or overhead.
+2. *Throughput*: Maximize the speed of allocation and deallocation operations to maintain high performance under varying workloads.
+
+Balancing these metrics is crucial because optimizing one often comes at the expense of the other. For instance:
+    - Achieving high throughput alone can lead to poor utilization, e.g. by allocating the first available block without regard to fragmentation.
+    - Conversely, achieving perfect utilization could severely degrade throughput, e.g. by exhaustively searching the entire heap for the best block to allocate.
+
+To address this trade-off, I began by constructing a simple memory allocator and progressively experimented with increasingly advanced techniques, including:
+
+    - *Implicit free lists*: A straightforward approach for managing memory blocks.
+    - *Explicit free lists*: An improved method that maintains separate lists for free memory blocks.
+    - *Segregated free lists*: A more sophisticated technique that organizes memory blocks into size-based categories for faster allocation.
+
+The ultimate aim was to create a memory allocator capable of delivering both high speed and exceptional efficiency, surpassing the performance of standard library implementations. By focusing exclusively on throughput and memory utilization, this implementation was able to outperform standard library allocators in these two areas.
+
+
+* The Fundamentals of Memory Management
+** The Heap
+   Before diving into the implementation, it’s essential to understand how memory is managed in modern systems.
+
+   When a program requests memory, e.g.  a malloc call in C, the memory is allocated from a region of memory known as the *heap*. The heap is part of the program’s address space, and its layout appears as a single, continuous array of addresses. The *heap* is the region used for dynamic memory allocation, managed manually using calls like malloc and free.
+   
+   Memory is organized as a continuous array of byte-addressable locations, each with a unique address. In a 64-bit system, these addresses range from 0x00000000 to 0xFFFFFFFF, (though not all addresses are usable).
+   
+   The heap begins as a small region of memory. If the program needs more memory, it can request to grow the heap dynamically through system calls like sbrk() or mmap().
+
+
+*Blocks Within the Heap*
+The heap is divided into blocks of memory, each containing:
+Metadata (Header and/or Footer): Information about the block, such as its size and whether it is free or allocated
+Payload: The portion available to the program for data storage.
+
+*Fragmentation*:
+   - *Internal Fragmentation:* Wasted space inside allocated blocks due to alignment or unused payload.
+   - *External Fragmentation:* Free memory scattered in non-contiguous blocks, preventing larger allocations despite sufficient total free space.
+
+
+** *First approach: Implicit List Implementation*
+The allocator started with a basic implicit list, with a pointer to the start and end memory cells of the array.
+Each block stores a header with the size of the block and its allocation status.
+To traverse the list and find a free block, you traverse linearly from start to end, jumping from block to block using the sizes in the headers, until you find a large-enough free block.
+
+- *Pros*: Easy to implement, minimal overhead.
+- *Cons*: Poor throughput due to costly linear scans.
+
+  
+*Block-finding strategies*
+- First fit: search list from beginning, choose first free block that fits. Can take linear time in total number of blocks (allocated and free). In practice, it can cause “splinters” at the beginning of the list.
+
+- Next-fit: Like first fit, but search list starting where the previous search finished. Should often be faster than first fit: avoids re-scanning unhelpful blocks. Some research suggests that fragmentation is worse.
+
+- Best-fit: Search the list, choose the best free block: fits with the fewest bytes left over. Keeps fragments small—usually improves memory utilization. Will typically run slower than first fit. Still a greedy algorithm with no guarantee of optimality.
+
+*Allocating a Free Block*
+Once a free block is found splitting is usually required:
+- *Splitting*: if the requested memory is smaller than the size of the free block, we split the free block into two blocks (one of the size of the requested memory, and the other block is the remainder of the free space)
+
+*Freeing an Allocated Block Efficiently*
+When freeing an allocated block, we must coalesce to handle memory efficiently:
+- *Coalescing*: if a newly freed block is adjacent to other free blocks, these must be combined into one larger free block. Otherwise, we can end up with many small contiguous free blocks, with enough contiguous free space to make large allocations, but none of the individual free blocks can make large allocations.
+
+- *Footers*: Pro:  adding footers to the metadata of each blocks allows constant-time coalescing. This is because from a given block, we can access the footer of the previous block, which contains the size of that block, and then jump to the head of the block to check if it is free or allocated.
+                Con: adds internal fragmentation (more use of memory for metadata)
+         
+  
+
+***  Second Approach: Explicit Lists
+Optimization: we now maintain a (doubly-linked) list of free blocks. Each free block has two pointers added to its struct:
+- next: points to next free block
+- prev: points to previous free block
+
+*Insertion policy*
+We use 
+
+- **Key Optimization**: Adopting a *Last-In-First-Out (LIFO)* policy for maintaining the free list, as it simplifies management and improves performance.
+
+**3. Segregated Free Lists:**
+Finally, I implemented segregated lists, partitioning free blocks into size classes. This refinement significantly boosted throughput by limiting the scope of searches to blocks of similar sizes.
+
+
+*Addressing Fragmentation*
+
+A major milestone was reducing **internal fragmentation**. Initially, each block included both headers and footers, with footers used for coalescing adjacent free blocks. To eliminate this redundancy:
+
+- **Innovation**: I encoded the "previous block's allocation status" in the header, allowing coalescing without footers. This saved 16 bytes per allocated block and improved memory utilization.
+
+I also addressed **external fragmentation** by ensuring free blocks were coalesced and using segregated lists to find best-fit allocations within specific size ranges.
+
+
+
+*Optimizations*
+
+_Memory utilization optimizations_
+- Removing footers on allocated blocks: by adding a bit on the header that represents whether the previous block is allocated or not, we no longer need footers on allocated blocks.
+
+
+* Implementation Challenges and Solutions

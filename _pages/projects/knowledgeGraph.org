@@ -1,0 +1,44 @@
+#+title: Building Reusable Knowledge Graph Tools
+
+I worked with Professor David Touretzky on an NSF, Google, and Amazon funded research project, developing an interactive knowledge‐graph web application on SPARQL. The goal of the project was to develop a set of reusable tools for creating and navigating knowledge graphs. These tools were designed to be flexible and adaptable to a wide variety of data types, enabling users to visualize and explore relationships in dynamic knowledge graph structures. Below, I will walk you through the various components and steps involved in building this system, which leveraged several technologies, including JavaScript, Bootstrap, Cytoscape, and more.
+
+We presented our [[~/gonz/CS/Semesters/Summer Research/2023 Knowledge Graph Poster.pdf][research poster]] at the AI‐CARING (AI Institute for Collaborative Assistance and Responsive Interaction for Networked Groups) conference in Aug 2023.
+
+*Bootstrap for Layout and Grid System*
+To build a responsive user interface for interacting with knowledge graphs, I used [[https://getbootstrap.com/docs/5.0/getting-started/introduction/][Bootstrap 5]]. Bootstrap is a powerful front-end framework that simplifies the creation of responsive, grid-based layouts. In particular, I used Bootstrap’s grid system to structure navigation tools on the page. For example, I created a 3x5 grid layout for the navigation tool, enabling a clear and organized presentation of the graph data.
+
+*Cytoscape for Graph Visualization*
+The project involved visualizing complex relationships in the form of graphs, and for this, I used [[https://cytoscape.org/][Cytoscape]], a powerful graph theory library for web environments. Cytoscape was ideal for handling the dynamic nature of the knowledge graph, as it allowed for built-in tools for simple creation, manipulation, and visualization of nodes and edges.
+
+The Cola extension of Cytoscape was used for force-directed graph layouts, which helps in making complex graphs visually comprehensible by automatically adjusting the placement of nodes and edges based on certain algorithms. This was particularly useful when rendering large and dynamic graphs.
+
+This allowed users to interact with the graph, such as tapping on nodes to explore relationships or zooming in on specific areas for more detail.
+
+*Nav Tools for Exploration*
+The navigation tool was crucial for exploring the knowledge graph. It provided users with the ability to track their path through different regions and jump to related entities within the graph. The tool was built to maintain a history of the user's navigation and allow them to jump back to previous locations. The =navHistoryList= was an object that stored the user's search path in the graph, while the childrenTable keeps track of the relationships between nodes.
+
+*Data Flow and Code Trace*
+The user inputs a region name, such as 'Pittsburgh', into the HTML box. The system fetches the data related to the region using a property query and processes the returned JSON data.
+
+#+begin_src javascript
+d3.json(url).then(function(data) { /* process data */ });
+#+end_src
+
+Once the data is retrieved, it is converted into a format suitable for Cytoscape and rendered as a graph. The =visualizeData= function sets up event listeners and styles for the nodes.
+
+Then system makes several calls to initialize the navigation tools, setting up the navHistoryList and childrenTable. These lists allow for easy exploration through related nodes, making navigation seamless and intuitive.
+
+*Challenges of the project*
+One of the biggest challenges of this project was the sheer volume of code. My task was to unify several different knowledge graph demos for different types of data (some where geographical data, others taxonomy, etc) into one single generic model that worked with all types of data.
+
+This was a project that was passed on from student to student, that ended up being over 5,000 lines of undocumented code of different models that had been built to only be compatible with a specific type of data.
+
+It taught me the importance of software engineering principles the hard way. When I encountered 5,000 lines of undocumented code, with no comments, no code modularization i.e. each model was a gigantic single file, I vowed to never produce code like that again. I spent over a month just trying to piece together how these models worked without a single comment or document as guidance. These models had many moving parts occurring simultaneously (like ), as well as functions that created streams of dozens of calls jumping from one function to another that were a headache to follow.
+
+But from everything that was wrong in that codebase, I learned to truly value the importance of the following principles:
+- Create design docs for every project, specifying the high-level logic of every component
+- Keep functions to a single purpose, instead of having a function do ten things. Modularity is key for debugging
+- Don't have operations that span too many functions calling each other in a manner that cannot be followed.
+
+
+Overall, I had enjoyed the backend asepcts of the project much more than the front-end, which made me realize how much more interested I was in pursuing backend in the future, which guided my future course selection.

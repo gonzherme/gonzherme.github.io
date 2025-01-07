@@ -1,8 +1,8 @@
 ---
 title: "Projects"
-author_profile: false
+author_profile: true
 permalink: /projects/
-sitemap: false
+sitemap: true
 ---
 
 ## Sentiment Analysis Optimization
@@ -10,6 +10,10 @@ sitemap: false
 - Preprocessed data with Bag of Words (BOW) and TF-IDF, optimizing for accuracy and computational efficiency
 - Analyzed the impact of word embedding dimensionality on model performance, balancing reduced computation cost and accuracy
 
+<video width="560" height="315" controls>
+  <source src="../images/sentiment-video.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## PlanIt
 ### HackCMU 2023 Award Winning Project ($1200 prize)

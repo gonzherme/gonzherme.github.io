@@ -5,7 +5,7 @@ permalink: /experience/
 ---
 
 ## Rubrik  
-*Software Engineering Intern*
+*Software Engineering Intern*  
 *Jun 2024 – Aug 2024*
 
 
@@ -15,7 +15,7 @@ I was responsible for **redesigning Rubrik’s database service architecture**, 
 
 
 ## Carnegie Mellon University
-*Research Intern*
+*Research Intern*  
 *Jan 2024 - Aug 2024*
 
 <img src="../images/cmu-scs-logo.png" alt="CMU SCS Logo" width="500"/>
@@ -29,7 +29,7 @@ Click [here](https://github.com/rbdannenberg/cserpent) to access the project Git
 
 
 ## Carnegie Mellon University
-*Research Intern*
+*Research Intern*  
 *May 2023 - Dec 2023*
 
 <img src="../images/cmu-logo.png" alt="CMU Logo" width="500"/>

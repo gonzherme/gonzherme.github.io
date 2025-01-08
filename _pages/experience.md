@@ -6,7 +6,6 @@ permalink: /experience/
 
 ## Rubrik  
 *Software Engineering Intern*
-
 *Jun 2024 – Aug 2024*
 
 
@@ -17,7 +16,6 @@ I was responsible for **redesigning Rubrik’s database service architecture**, 
 
 ## Carnegie Mellon University
 *Research Intern*
-
 *Jan 2024 - Aug 2024*
 
 <img src="../images/cmu-scs-logo.png" alt="CMU SCS Logo" width="500"/>
@@ -32,10 +30,9 @@ Click [here](https://github.com/rbdannenberg/cserpent) to access the project Git
 
 ## Carnegie Mellon University
 *Research Intern*
-
 *May 2023 - Dec 2023*
 
-<img src="../images/cmu-logo.png" alt="CMU SCS Logo" width="500" height="250"/>
+<img src="../images/cmu-logo.png" alt="CMU SCS Logo" style="width: 500px; height: 250px;" />
 
 I worked with [Professor David Touretzky](https://www.cs.cmu.edu/~dst/) on an **NSF, Google, and Amazon funded research project**, developing an interactive knowledge‐graph web application on SPARQL. The goal of the project was to develop a set of **generic reusable tools for creating and navigating knowledge graphs**. These tools were designed to be flexible and adaptable to a wide variety of data types, enabling users to visualize and explore relationships in dynamic knowledge graph structures. In building these tools, I leveraged several technologies, including **JavaScript**, **Bootstrap**, and **Cytoscape**.
 

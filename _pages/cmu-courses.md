@@ -1,7 +1,7 @@
 ---
-title: "Courses"
-author_profile: false
-permalink: /courses/
+title: "CMU Courses"
+author_profile: true
+permalink: /cmu-courses/
 ---
 
 ## Spring 2025

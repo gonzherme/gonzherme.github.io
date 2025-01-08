@@ -37,7 +37,7 @@ Given a new data point, k-NN will output as a prediction the class of the closes
 ** Experimental Insights
 To analyze how the size of the dimensionality of the word embeddings affect prediction accuracy, we trained and tested both of our models (Logistic Regression and k-NN) with varying vocabulary dimensions for the word embeddings, ranging from a dimensionality of 50 up to 40,000.
 
-[[./images/sentiment_experiment.png]]
+[[../images/sentiment-experiment.png]]
 
 As shown in the graph, the performance of logistic regression surpasses that of k-NN. Logistic regression often outperforms k-NN in text classification tasks because it handles high-dimensional data more effectively. Text data, especially when represented using methods like Bag-of-Words (BOW) or TF-IDF, creates a large number of features. Logistic regression learns weights for each feature, allowing it to identify and prioritize the most important ones for classification. In contrast, k-NN relies on calculating distances between data points, which becomes less reliable in high-dimensional spaces due to the "curse of dimensionality." (as the number of dimensions (features) increases, the volume of the space grows exponentially, and data points become sparse, making it harder to analyze and draw conclusions.) This makes logistic regression better suited for extracting meaningful patterns from text data.
 

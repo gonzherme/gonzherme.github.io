@@ -1,12 +1,12 @@
 
 # Table of Contents
 
-1.  [An Application to Match Your Running Pace with Music](#org920d87c)
-2.  [Features](#org4087f7d)
-3.  [How It Works](#org78ccd7f)
-4.  [Technical Overview](#org1c7f19f)
-5.  [Technical Challenges](#org32480ee)
-6.  [Improvements and Future Work](#org5a9f861)
+1.  [An Application to Match Your Running Pace with Music](#orgf13ff06)
+2.  [Features](#org98e0b63)
+3.  [How It Works](#orga65e12b)
+4.  [Technical Overview](#org28a2499)
+5.  [Technical Challenges](#orgaf8cf59)
+6.  [Improvements and Future Work](#orgb04f931)
 
 ---
 title: "Rhythm"
@@ -15,14 +15,14 @@ title: "Rhythm"
 ---
 
 
-<a id="org920d87c"></a>
+<a id="orgf13ff06"></a>
 
 # An Application to Match Your Running Pace with Music
 
 Rhythm is a Python-based application designed to enhance a runner's treadmill experience by adapting music tempo to maintain a consistent running pace. Once on the treadmill, Rhythm helps you stay on track by synchronizing the beats per minute (BPM) of the songs in your playlist with your running pace.
 
 
-<a id="org4087f7d"></a>
+<a id="org98e0b63"></a>
 
 # Features
 
@@ -35,7 +35,7 @@ Rhythm is a Python-based application designed to enhance a runner's treadmill ex
 -   **User Interaction**: The app provides an interactive interface through which users can edit their running goals. You can also track your progress with various counters, including pace, distance, and time.
 
 
-<a id="org78ccd7f"></a>
+<a id="orga65e12b"></a>
 
 # How It Works
 
@@ -46,7 +46,7 @@ The user inputs their target distance and target time for a run into the app, an
 -   **Song Alteration**: The app loads songs from the user's playlist and changes the tempo of the tracks to match the calculated steps per minute. The playlist consists of original songs and altered versions, where the songs are dynamically modified to match the required BPM.
 
 
-<a id="org1c7f19f"></a>
+<a id="org28a2499"></a>
 
 # Technical Overview
 
@@ -61,7 +61,7 @@ Rhythm leverages several libraries and tools to achieve its goal of syncing musi
 -   **Stride Length and Pace Calculation**: The app calculates your stride length based on your height and uses that data to determine your steps per minute. From there, it calculates your required pace to complete the set distance within the target time.
 
 
-<a id="org32480ee"></a>
+<a id="orgaf8cf59"></a>
 
 # Technical Challenges
 
@@ -78,7 +78,7 @@ To simulate depth and distance, the graphics utilize a [one-point perspective](h
 -   **Altered pitch**: pydub does not use any pitch preservation algorithms, since it simply speeds up or slows down the songs. This leads to higher pitch when speeding songs up, and lower pitch when slowing them down. This causes the altered songs to sound quite different from their original version. This issue will also be further discussed in the improvements section.
 
 
-<a id="org5a9f861"></a>
+<a id="orgb04f931"></a>
 
 # Improvements and Future Work
 

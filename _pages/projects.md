@@ -28,6 +28,7 @@ sitemap: true
 - Tool changes the beats per minute of songs to match the steps per minute of the runner
 - Implemented manipulation of mp3 audio files with ML beat detection libraries: pydub, scipy, and librosa
 
+More about this project on the following [blog post](https://gonzherme.github.io/posts/rhythm/).
 
 ## Visual Question Answering Research Paper
 

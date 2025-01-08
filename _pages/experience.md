@@ -6,6 +6,7 @@ permalink: /experience/
 
 ## Rubrik  
 *Software Engineering Intern*
+
 *Jun 2024 – Aug 2024*
 
 
@@ -16,6 +17,7 @@ I was responsible for **redesigning Rubrik’s database service architecture**, 
 
 ## Carnegie Mellon University
 *Research Intern*
+
 *Jan 2024 - Aug 2024*
 
 <img src="../images/cmu-scs-logo.png" alt="CMU SCS Logo" width="500"/>
@@ -25,13 +27,18 @@ provides a real-time parallel mark-sweep garbage collector and multiple virtual 
 
 I **led Serpent's benchmarking team**. We wrote standard benchmarking algorithms, such as: matrix multiplcation, binary-tree searches, n-queen solving, and sudoku. We took practical runtime measurements to evaluate the performance of simple algorithms like sorting, searching, and mathematical computations. The tests were designed to measure both execution speed and memory usage across a variety of scenarios. We also implemented each algorithm in Serpent, Python, C, and C++ to directly compare their runtime performance in similar conditions, using standard libraries and common optimizations for each language.
 
+Click [here](https://github.com/rbdannenberg/cserpent) to access the project GitHub repository.
+
 
 ## Carnegie Mellon University
 *Research Intern*
+
 *May 2023 - Dec 2023*
 
-<img src="../images/cmu-logo.png" alt="CMU SCS Logo" width="500"/>
+<img src="../images/cmu-logo.png" alt="CMU SCS Logo" width="500" height="250"/>
 
-I worked with Professor David Touretzky on an NSF, Google, and Amazon funded research project, developing an interactive knowledge‐graph web application on SPARQL. The goal of the project was to develop a set of reusable tools for creating and navigating knowledge graphs. These tools were designed to be flexible and adaptable to a wide variety of data types, enabling users to visualize and explore relationships in dynamic knowledge graph structures. Below, I will walk you through the various components and steps involved in building this system, which leveraged several technologies, including JavaScript, Bootstrap, Cytoscape, and more.
+I worked with [Professor David Touretzky](https://www.cs.cmu.edu/~dst/) on an **NSF, Google, and Amazon funded research project**, developing an interactive knowledge‐graph web application on SPARQL. The goal of the project was to develop a set of **generic reusable tools for creating and navigating knowledge graphs**. These tools were designed to be flexible and adaptable to a wide variety of data types, enabling users to visualize and explore relationships in dynamic knowledge graph structures. In building these tools, I leveraged several technologies, including **JavaScript**, **Bootstrap**, and **Cytoscape**.
 
 We presented our [research poster](../files/2023 Knowledge Graph Poster.pdf) at the AI‐CARING (AI Institute for Collaborative Assistance and Responsive Interaction for Networked Groups) conference in Aug 2023.
+
+Click [here](https://github.com/touretzkyds/KnowledgeGraphDemo/tree/devel) to access the project GitHub repository.

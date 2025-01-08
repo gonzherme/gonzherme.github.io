@@ -5,8 +5,8 @@ permalink: /projects/
 sitemap: true
 ---
 
-## Sentiment Analysis Optimization
-- Developed [Sentiment Analysis models](https://github.com/gonzherme/sentiment-analysis) using sentimeLogistic Regression and k-NN, trained on the [IMDB Movie Review Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+## Sentiment Analysis
+- Developed [Sentiment Analysis models](https://github.com/gonzherme/sentiment-analysis) using Logistic Regression and k-NN, trained on the [IMDB Movie Review Dataset](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
 - Preprocessed data with Bag of Words (BOW) and TF-IDF, optimizing for accuracy and computational efficiency
 - Analyzed the impact of word embedding dimensionality on model performance, balancing reduced computation cost and accuracy
 
@@ -28,4 +28,7 @@ sitemap: true
 - Tool changes the beats per minute of songs to match the steps per minute of the runner
 - Implemented manipulation of mp3 audio files with ML beat detection libraries: pydub, scipy, and librosa
 
-[here](http://gonzherme.github.io/files/vqa-paper.pdf)
+
+## Visual Question Answering Research Paper
+
+For CMU's 10-417 Intermediate Deeep Learning, my final research paper explored how deep reasoning network modules can be used to enhance existing deep learning models at performing the Visual Question and Answering (VQA) task. The paper can be accesssed [here](http://gonzherme.github.io/files/vqa-paper.pdf).

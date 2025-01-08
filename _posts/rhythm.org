@@ -1,13 +1,4 @@
 #+options: toc:nil  # no table of contents
-#+BEGIN_EXPORT markdown
----
-title: "Rhythm"
-date: 2025-01-08
-author_profile: true
-permalink: /posts/rhythm/
----
-#+END_EXPORT
-
 
 ** An Application to Match Your Running Pace with Music
 

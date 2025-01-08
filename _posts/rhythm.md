@@ -1,7 +1,8 @@
 ---
 title: "Rhythm"
-#+author_profile: true
-#+permalink: /rhythm/
+date: 2025-01-08
+author_profile: true
+permalink: /posts/rhythm/
 ---
 
 

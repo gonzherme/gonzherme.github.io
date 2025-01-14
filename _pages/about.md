@@ -12,7 +12,7 @@ Hi! My name is Gonzalo and I'm currently working on databases at [Rubrik](https:
 
 My interests lie in deep learning theory, distributed systems, and cloud computing.
 
-I was born and raised in Madrid, Spain, before moving to the US for college and work. In my free time, I enjoy writing music, playing tennis, learning geopolitics and philosophy, and spending time with family and friends.
+In my free time, I enjoy writing music, tennis, geopolitics, philosophy, and spending time with family and friends.
 
 Feel free to reach out to me at gdeherme[at]andrew[dot]cmu[dot]edu
 

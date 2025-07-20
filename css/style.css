@@ -117,18 +117,20 @@ nav a:hover {
 a[href*="twosigma.com"],
 a[href*="rubrik.com"],
 a[href*="mailto:gdeherme@andrew.cmu.edu"],
-a[href*="cs.cmu.edu"] {
-  color: #4A90E2;
-  text-decoration: none;
+a[href*="cs.cmu.edu"],
+a[href*="github.com/rbdannenberg/cserpent"] {
+  color: #4A90E2 !important;
+  text-decoration: none !important;
   transition: color 0.2s ease;
 }
 
 a[href*="twosigma.com"]:hover,
 a[href*="rubrik.com"]:hover,
 a[href*="mailto:gdeherme@andrew.cmu.edu"]:hover,
-a[href*="cs.cmu.edu"]:hover {
-  color: #2E5C8A;
-  text-decoration: none;
+a[href*="cs.cmu.edu"]:hover,
+a[href*="github.com/rbdannenberg/cserpent"]:hover {
+  color: #2E5C8A !important;
+  text-decoration: none !important;
 }
 
 ul {

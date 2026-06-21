@@ -70,7 +70,7 @@ section {
 .title-nav-links a {
   text-decoration: none;
   color: #666;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   transition: color 0.2s ease;
   letter-spacing: 0.5px;
@@ -113,22 +113,14 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Company links styling */
-a[href*="twosigma.com"],
-a[href*="rubrik.com"],
-a[href*="mailto:gdeherme@andrew.cmu.edu"],
-a[href*="cs.cmu.edu"],
-a[href*="github.com/rbdannenberg/cserpent"] {
+/* links styling */
+.special-link {
   color: #4A90E2 !important;
   text-decoration: none !important;
   transition: color 0.2s ease;
 }
 
-a[href*="twosigma.com"]:hover,
-a[href*="rubrik.com"]:hover,
-a[href*="mailto:gdeherme@andrew.cmu.edu"]:hover,
-a[href*="cs.cmu.edu"]:hover,
-a[href*="github.com/rbdannenberg/cserpent"]:hover {
+.special-link:hover {
   color: #2E5C8A !important;
   text-decoration: none !important;
 }
